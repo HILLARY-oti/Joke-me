@@ -55,7 +55,7 @@ public class AsyncEndpoint extends AsyncTask<Void, Void, String> {
             Log.i(LOG_TAG, "MSG! joke: " + joke);
             return joke;
         } catch (IOException e) {
-            return "";
+            return null;
         }
     }
 
